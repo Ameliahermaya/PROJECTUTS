@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<center>
+    <h2 style="background-color:whitesmoke;">Biodata Diri</h2>
+</center>
+
+<p></p>
+<center>
+    <img src="..\static\images\foto amel 2.jpg" alt="" width="250px">
+</center>
+
+<p></p>
+<h3 style="background-color:rgba(23, 91, 108, 0.831);">Biodata Penulis</h3>
+<p style="font-family: 'times new roman'">Nama : Amelia Hermaya</p>
+<p style="font-family: 'times new roman'">NIM : 2225210006</p>
+<p style="font-family: 'times new roman'">Kelas : 3C</p>
+<p style="font-family: 'times new roman'">Dosen Pengampu : Dr. Aan Hendrayana</p>
+
+<p style="font-family: 'times new roman'">Amelia Hermaya tinggal di Kab.serang dan menjadi salah satu mahasiswi di Universitas Sultan Ageng Tirtayasa Jurusan Pendidikan Matematika. Ia lahir di serang pada tanggal 19 Januari 2003. Selain memiliki ketertarikan dalam bidang yang berhubungan dengan hitungan ia juga memiliki hobi berenang.</p>
+<P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+<hr />
+<footer>
+    <div class="font-small">&copy; Teknologi Informasi dan Komunikasi Untuk Pembelajaran</div> 
+    <div class="font-small">@ameliahermaya_19</div>
+</footer>
+
+
+{% endblock %}

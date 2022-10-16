@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PEUBAH ACAK KONTINU</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://admin-spada.kemdikbud.go.id/hard_cover/cover-2a1a1867-76af-9e70-7f7f-3fd6f1f94cc6.jpg" alt="Kurva Normal" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Peubah acak kontinu adalah peubah acak yang dibangkitkan dari ruang sampel kontinu. Dalam kebanyakan persoalan praktis, peubah acak kontinu menyatakan data yang diukur, seperti seluruh kemungkinan tinggi, berat, temperatur, jarak atau jangka hidup, sedangkan peubah acak diskret menggambarkan data cacah, seperti banyak barang yang cacat dalam sampel sebesar k barang.</p>
+    <p style="font-family: 'times new roman'">Sedangkan, Variabel acak kontinu jika digambarkan pada sebuah garis interval, akan berupa sederetan titik yang bersambung membentuk suatu garis lurus. Contohnya, jumlah air yang keluar dari sebuah selang air, jumlah oksigen di udara, dan lain sebagainya.</p>
+    
+    <P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

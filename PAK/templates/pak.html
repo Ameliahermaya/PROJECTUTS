@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PENGUMPULAN DAN PENYAJIAN DATA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://lh4.googleusercontent.com/Ikp9IsZDk0-mNA5S__hYKS9-dehmiFHD8bf59ZVhX0QhHxYwQUq_Uxcyomdk1mCMS7jLjQaHlquSS6k7DVzQ6RqbKpsJtrGCK3xZjuxdHZ7w9Z-gwicCAvp8THZef_rR42usC57M" alt="Kurva Normal" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Penyajian Data Statistik Statistika deskriptif adalah metode–metode yang berkaitan dengan pengumpulan dan penyajian suatu kumpulan data sehingga memberikan informasi yang berguna. Statistika deskriptif memberikan informasi hanya mengenai data yang dipunyai dan sama sekali tidak menarik iferensia atau kesimpulan apapun tentang data tersebut.</p>
+    <p style="font-family: 'times new roman'">Penyajian data kategori deskriptif dapat berbentuk grafis dan numerik, yaitu  penyajian data statistik dalam bentuk grafis dan numerik. </p>
+
+    <p style="font-family: 'times new roman'">Ruangan yang dibatasi daerah kurva dengan absisnya disebut daerah kurva normal. Luas daerah kurva normal biasa dinyatakan dalam persen atau proporsi. Dengan kata lain luas daerah kurva normal adalah seratus per sen, apabila dinyatakan dalam persen, dan apabila dinyatakan dengan proporsi, luas daerah kurva normal adalah satu. </p>
+    
+    <p></p>
+    <p></p>
+    <center><h3 style="background-color: rgba(23, 91, 108, 0.831) ;">Penyajian Data Statistik Dalam Grafik</h3></center>
+   <p></p>
+   <p></p>
+
+   <h4 style="background-color: whitesmoke;">A. Histogram</h4>
+   <p style="font-family: 'times new roman'">Histogram adalah grafik dari distribusi frekuensi suatu variabel. Tampilan histogram berupa balok. Penyajian data ini terdiri dari dua sumbu utama dengan sudut 90 dimana sebagai absis sumbu X dan sebagai ordinat Y. Lebar balok merupakan jarak dari batas kelas interval, sedangkan tinggi balok menunjukkan besarnya frekuensi.</p>
+   <p></p>
+   <center><img src="https://www.statmat.net/wp-content/uploads/2017/12/Penyajian-Data-Statistik-Histogram-320x240.png" alt="histogram" width="300px"></center>
+   <p></p>
+
+   <h4 style="background-color: whitesmoke;">B. Pie Chart</h4>
+   <p style="font-family: 'times new roman'">Pie Chart / Diagram kue merupakan sebuah lingkaran yang dibagi menjadi beberapa sektor. Tiap sektor menyatakan besarnya presentase atau bagian untuk masing-masing kelompok. Berikut contoh data pie chart yang menggambarkan prosentasi kepemilikan hewan berdasarkan jenisnya.</p>
+    <p></p>
+    <center><img src="https://www.statmat.net/wp-content/uploads/2017/12/Penyajian-Data-Statistik-Pie-chart-300x300.jpg" alt="pie" width="300px"></center>
+    <p></p>
+
+   <h4 style="background-color: whitesmoke;">C. Poligon</h4>
+   <p style="font-family: 'times new roman'">Poligon adalah grafik dari distribusi frekuensi tergolong suatu variabel. Tampilan poligon berupa garis-garis patah yang diperoleh dengan cara menghubungkan puncak masing-masing nilai tengah kelas. Poligon sangat baik digunakan untuk membandingkan bentuk dari dua distribusi.</p>
+    <p></p>
+    <center><img src="https://www.statmat.net/wp-content/uploads/2017/12/Penyajian-Data-Statistik-Poligon.png" alt="poligon" width="300px"></center>
+    <p></p>
+
+   <h4 style="background-color: whitesmoke;">D. Ogive</h4>
+   <p style="font-family: 'times new roman'">Ogive adalah bentuk gambar dari distribusi frekuensi kumulatif suatu variabel. Untuk suatu tabel distribusi frekuensi, dapat dibuat ogive positif dan ogive negatif.</p>
+    <p></p>
+    <center><img src="https://www.statmat.net/wp-content/uploads/2017/12/Penyajian-Data-Statistik-Ogive.gif" alt="Kurva Normal" width="300px"></center>
+    <p></p>
+
+   <h4 style="background-color: whitesmoke;">E. Diagram Batang Daun</h4>
+   <p style="font-family: 'times new roman'">Diagram Batang Daun (Stem and Leaf) sama dengan histogram, hanya saja informasi yang diperoleh lebih baik karena diagram batang daun memperlihatkan nilai-nilai pengamatan asli. Dalam diagram ini ditampilkan bilangan-bilangan sebagai batang dan disebelah kananya ditulis bilangan sisanya.</p>
+   <p></p>
+   <center><img src="https://www.statmat.net/wp-content/uploads/2017/12/Penyajian-Data-Statistik-Stem-and-leaves.gif" alt="Kurva Normal" width="300px"></center>
+   <p></p>
+
+   <P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

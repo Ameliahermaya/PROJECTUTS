@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PEUBAH DISKRIT</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://cdnwpedutorepartner.gramedia.net/wp-content/uploads/2020/06/28133816/Jurusan-Statistika-01.png" alt="Kurva Normal" width="300px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">Peubah acak diskrit adalah peubah acak yang dibangkitkan dari ruang sampel diskrit dan himpunan kemungkinan hasilnya dapat dihitung. Sebagai contoh, banyak barang yang cacat dalam sampel sebesar k, banyaknya korban meninggal dalam kecelakaan setiap tahunnya dan sebagainya.</p>
+    <p style="font-family: 'times new roman'">Beberapa contoh peubah acak diskrit misalnya:</p>
+    <p style="font-family: 'times new roman'"> X: Banyaknya kecelakaan mobil per tahun di Jakarta.</p>
+    <p style="font-family: 'times new roman'"> Y: Banyaknya SIM dikeluarkan tiap bulan di suatu kota tertentu.</p>
+    <p style="font-family: 'times new roman'"> Z: jumlah pengunjung toko dari jam 09-00-10.00. , R = {x|x: 1,2,3,..}</p>
+
+    <p></p>
+    <center><img src="https://lh4.googleusercontent.com/N7qByqDyclzBuV31H1pXYi4CpR0mup11ucKA_h6BmU58xCcpogV77iC4r82442Tf90VSYeWn4QlqNJFCk95EjjYZEtr2O6OoS_JWr7Ss1gmxds3bwNi0tTlChCli0MMf9xlmlJ-C" alt="Kurva Normal" width="300px"></center>
+    <p></p>
+    <p></p>
+    <p style="font-family: 'times new roman'">Selain data kualitatif, data kuantitatif juga merupakan data yang sering digunakan dalam penelitian. Data kuantitatif dibagi dua jenis yaitu data diskrit dan data kontinu. Data diskrit adalah data yang nilainya memiliki kemungkinan nilai terbatas dan antar nilai satu dengan yang lainnya terpisah, contohnya jumlah siswa dalam satu kelas, jumlah pasien di rumah sakit, jumlah manik-manik dalam kantong, dan lain sebagainya. </p>
+    <p style="font-family: 'times new roman'">Data kontinu adalah data yang nilainya memiliki kemungkinan nilai yang tidak terbatas dalam kisaran tertentu. Contoh data kontinu yaitu kisaran suhu, tinggi badan karena dapat diukur dalam meter dan pecahan meter, waktu terjadinya suatu peristiwa, dan lain sebagainya. </p>
+    
+    <P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+   
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

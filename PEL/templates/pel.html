@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PELUANG</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://www.ruangguru.com/hs-fs/hubfs/Istilah%20Peluang%20Kejadian.jpg?width=900&name=Istilah%20Peluang%20Kejadian.jpg"alt="Kurva Normal" width="300px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">peluang suatu kejadian itu adalah kemungkinan dari suatu kejadian. Selain peluang lolos di kampus impian, banyak contoh lain tentang peluang, ya. Bisa peluang mendapatkan bola berwarna merah, peluang menang lomba, peluang turun hujan, dan masih banyak lagi.</p>
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">Rumus Peluang</h4>
+    <p style="font-family: 'times new roman'">Peluang atau kemungkinan, secara teoritis artinya perbandingan antara banyaknya suatu kejadian dengan banyaknya seluruh kemungkinan yang terjadi. Jadi, kita bisa tuliskan rumus peluang kejadian, seperti ini:</p>
+    <p></p>
+    <center><img src="https://soalfismat.com/wp-content/uploads/2020/07/Rumus-peluang.png"alt="peluang" width="300px"></center>
+    <p></p>
+
+    <p style="font-family: 'times new roman'">jika kamu menemukan soal peluang yang memperhatikan urutan/susunannya, misal ada keterangan “diambil berurutan”, maka kamu harus hitung dengan rumus permutasi. Sebaliknya, kalau pada soal disuruh untuk diambil secara acak atau tidak memperhatikan urutan, maka kamu pakai rumus kombinasi.</p>
+    <p></p>
+    <center><img src="https://www.ruangguru.com/hs-fs/hubfs/Perbedaan%20Kombinasi%20dan%20Permutasi.jpg?width=900&name=Perbedaan%20Kombinasi%20dan%20Permutasi.jpg"alt="Kurva Normal" width="300px"></center>
+
+    <P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: whitesmoke;">PENGUKURAN DATA</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0XWazGE8FReqgkbrB__bn_WaYcR7kp1fCA&usqp=CAU" alt="Kurva Normal" width="500px"></center>
+    <p></p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">PENJELASAN</h4>
+    <p style="font-family: 'times new roman'">skala pengukuran merupakan sarana untuk menentukan panjang pendek interval yang telah ditentukan dalam satuan alat ukur. Salah satu cara agar bisa mengetahui panjang pendek interval dapat dilakukan dengan melakukan alat pengukuran. </p>
+    <p style="font-family: 'times new roman'">Penggunaan alat ukur dapat diterapkan untuk memperoleh data kuantitatif atau memperoleh angka. Kurang efektif jika digunakan untuk jenis penelitian kualitatif. Berikut adalah pengertian skala pengukuran data dalam penelitian menurut para ahli atau para tokoh. </p>
+    
+    <h4 style="background-color: rgba(23, 91, 108, 0.831) ;">Macam-Macam Skala Pengukuran Data Dalam Penelitian</h4
+    <p style="font-family: 'times new roman'">A. Skala Nominal </p>
+    <p style="font-family: 'times new roman'">B. Skala Ordinal</p>
+    <p style="font-family: 'times new roman'">C. Skala Interval</p>
+    <p style="font-family: 'times new roman'">D. Skala Rasio</p>
+    
+    <P></P>
+    <button style="background-color: rgba(24, 107, 128, 0.831)" onclick="goBack()">Back To</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<p></p> 
+
+    
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
